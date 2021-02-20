@@ -1,0 +1,723 @@
+@media only screen and (max-width:1100px) {
+  body{
+    width: 100%;
+    margin: 0;
+    background-color:rgba(46, 49, 49, 1);
+    font-family: 'Inter', sans-serif;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+
+  .verlinkung{
+    text-decoration: underline;
+
+  }
+
+  /* scroll to top button */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 40px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(242, 241, 239, 0.6); /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 24px; /* Increase font size */
+  }
+
+  #myBtn:hover {
+    back
+  }
+
+
+
+  /* navbar */
+  .navbar{
+    min-height: 60px;
+    height: auto;
+    width: 100%;
+    position: relative;
+
+    background-color: #171724;
+    color: rgba(210, 215, 211, 1);
+
+
+  }
+  .navbar-list{
+    list-style-type: none;
+
+  }
+
+  .navbar-item{
+    display: inline;
+    padding: 0 0.5em;
+  }
+
+
+
+  .nav-link{
+    padding: 1 0.2em;
+
+  }
+
+  .nav-link:hover{
+    text-shadow: 2px 2px rgba(210, 215, 211, 0.2);
+    color: white;
+  }
+
+  .nav-name{
+    position: absolute;
+    font-size: 22px;
+    font-weight: bolder;
+    top: -4px;
+    left: 2%;
+    color: white;
+
+
+  }
+
+  .nav-socialmedia{
+    position: absolute;
+    left: 2%;
+    top: 35%;
+  }
+
+
+  .Insta-Icon, .Facebook-Icon, .Youtube-Icon, .Twitch-Icon{
+    height: 20px;
+    width: 20px;
+
+  }
+
+  .Insta-Icon:hover, .Facebook-Icon:hover, .Youtube-Icon:hover, .Twitch-Icon:hover{
+      background: grey;
+    }
+
+    /* toggle-button */
+
+    .toggle-button{
+      z-index: 9999;
+    position: absolute;
+    top: 1rem;
+    right: 3em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    }
+
+    .toggle-button .linie{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    }
+
+    .toggle-links{
+    display: none;
+    flex-direction: column;
+    padding-top: 3em;
+    }
+
+    .active{
+      display: flex;
+    }
+    /* Slider  */
+    .slider{
+      display: flex;
+      position: relative;
+      min-height: 800px;
+    }
+
+    .slide{
+      width: 100%;
+      background-image: linear-gradient(to right,rgba(255, 255, 255, 1),rgba(232, 236, 241, 1),rgba(242, 241, 239, 0.1));
+      display: flex;
+      position: relative;
+      text-align: center;
+    }
+
+    .slide-textbox{
+      position: absolute;
+
+      bottom: 10%;
+      left: 25%;
+      font-family: Superclarendon;
+      font-size: 22px;
+      display: inline-block;
+      width: 35ch;
+      text-align: left;
+      line-height: 1.5em;
+      vertical-align: top;
+      padding: 1em 3em 0;
+      background-color: rgba(255, 255, 255, 1);
+
+    }
+
+    .slide-textbox {
+      display: none;
+    }
+
+    .titel-box{
+      display: none;
+    }
+
+    .titel-klein-wrapper{
+      width:100%
+      display:flex;
+      justify-content:center;
+      position: absolute;
+      bottom: 0;
+      left:25%;
+    }
+
+    .titel-klein{
+      font-family: serif;
+      font-size: 22px;
+      display: inline-block;
+      width: 35ch;
+      text-align: center;
+      line-height: 1.5em;
+
+      padding: 1em 3em 0;
+      background-color: rgba(255, 255, 255, 1);
+
+    }
+    .medaille-klein{
+      display: none;
+    }
+
+
+    .slide-img{
+      display: inline-block;
+    }
+    .slide-trophy, .loewen-logo{
+      display: inline;
+
+    }
+
+.trophy-gold{
+  width:200px;
+
+  position: absolute;
+  top: 12%;
+  left: 8%;
+}
+    .trophy-silber, .trophy-buli{
+      position: absolute;
+      top: 10%;
+      right: 5%;
+    }
+
+    .loewen-logo img{
+      width: 200px;
+      height: 200px;
+    }
+
+    .loewen-logo{
+      position: absolute;
+      top: 10%;
+      left: 5%;
+
+    }
+
+    .titel-linh, .titel-national, .titel-buli{
+      color: white;
+    }
+
+    .textbox-linh{
+      color: #c8a83c;
+    }
+
+    .textbox-national{
+      color: #807d77;
+    }
+
+    .textbox-buli{
+      color: #4b5d88;
+    }
+
+    .prev{
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      font-size: 5em;
+      }
+
+    .next{
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      font-size: 5em;
+      }
+
+    .prev:hover, .next:hover{
+      background-color: grey;
+    }
+
+  /* Partner */
+  .partner{
+
+    display: grid;
+    place-items:center;
+    min-height: 200px;
+
+    background-color: #171724;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .partner-box{
+    display:grid;
+    place-items:center;
+    text-align: center;
+
+  }
+
+  .partner-wrapper{
+  display: grid;
+  place-items: center;
+  }
+  .partner-überschrift{
+    padding-top: 20px;
+    display: block;
+  }
+  .logo-leonhart{
+
+    padding-top: 20px;
+    width: 100px;
+
+  }
+  .partner-text{
+    width: 40ch;
+    padding-bottom: 20px;
+
+  }
+
+  /*On Tour */
+  .onTour{
+
+    /* background-color: rgba(232, 236, 241, 1); */
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+
+  }
+
+  .onTour::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(images/titelbild_bearbeitet.jpeg);
+
+    background-size:cover;
+    background-position: center;
+    opacity: 0.4;
+  }
+
+  .onTour-text{
+    display:block;
+    text-align: center;
+    padding: 100px 0 50px 0;
+    position: relative;
+
+  }
+
+  .timeline{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+    margin: 0;
+    position: relative;
+
+
+
+  }
+
+  .li{
+    transition: all 200ms ease-in;
+  }
+
+  .timestamp{
+    margin-bottom: 20px;
+    padding: 0px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 100;
+    text-align: center;
+
+  }
+
+  .turnier{
+    padding: 0px 20px;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    border-top: 2px solid lightgrey;
+    position: relative;
+    transition: all 200ms ease-in;
+
+    }
+    .turnier:before{
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-color: lightgrey;
+      border-radius: 25px;
+
+      position: absolute;
+      top: -15px;
+      left: 44%;
+      transition: all 200ms ease-in;
+      cursor: pointer;
+    }
+
+
+  .li.onTour-li .timestamp{
+      visibility: hidden;
+
+    }
+
+  .stecknadel{
+      height: 30px;
+      padding: 0;
+
+    }
+
+  .van{
+    width:100px;
+    padding-right: 20px;
+  }
+
+  .timestamp-ort p{
+    font-weight: bold;
+    font-style: oblique;
+    margin: 0 0 10px;
+  }
+
+  .li.onTour-li.complete .timestamp{
+    visibility: visible;
+  }
+
+  .li.complete .turnier:before{
+        background-color: #ff7423;
+        border: none;
+        transition: all 200ms ease-in;
+      h4
+        color: white;
+      }
+
+
+
+  /* About Me */
+  .aboutMe{
+    display: grid;
+    place-items: center;
+    background-color: rgba(23,23,36,1);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 50px 0;
+    margin: 0;
+
+  }
+
+
+
+  .about-text{
+  width: 40ch;
+  padding: 0 4em;
+  position: relative;
+  }
+
+  .about-video{
+    padding: 2em;
+  }
+
+  .about-referenz{
+    padding-top: 3em;
+    position: absolute;
+    top: 72%;
+    right: 30%;
+  }
+  .presselogo{
+    object-fit: contain;
+    display: inline;
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Sponsoring */
+
+  .sponsoring::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(images/Sponsoring.jpg);
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+  }
+
+  .sponsoring{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    margin: 0;
+    position: relative;
+  }
+
+  .sponsoring-text{
+    text-align: center;
+    width:100%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    position: relative;
+
+  }
+
+  .sponsoring-text p{
+    width: 30ch;
+    margin: auto;
+  }
+
+  .sponsoring-kontakt{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .übergang{
+    height: 90px;
+    background-color: rgba(23,23,36,1);
+  }
+  /* booking */
+  .booking::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(images/kixx.jpg);
+    opacity: 0.4;
+    background-size: cover;
+    background-position: center;
+    z-index: -10000;
+
+  }
+
+  .booking{
+
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+  }
+
+
+
+
+  .booking-wrapper{
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+  }
+
+  .booking-content, .booking-partner{
+    width: 40ch;
+    padding: 1em 6em;
+  }
+
+  .booking-header{
+    text-align: center;
+    padding: 18em 6em 0;
+  }
+
+  .booking-kontakt{
+    font-weight: bold;
+    padding-top: 1em;
+  }
+
+  .booking-partner a{
+    text-decoration: underline;
+    color: lightblue;
+  }
+
+  .Kixx-Logo{
+    width: 100px;
+    padding-top: 1em;
+  }
+
+  .übergang2{
+    height: 20px;
+    background-color: rgba(23,23,36,1);
+  }
+
+
+  /* Contact */
+  .contact{
+    height: auto;
+    display: grid;
+    place-items: center;
+    /* background-image: linear-gradient(to right,rgba(255, 255, 255, 1),rgba(232, 236, 241, 1),rgba(242, 241, 239, 0.1)); */
+    background-color: #bad8f0;
+  }
+
+  .contact-wrapper{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .contact-wrapper img{
+    display: none;
+  }
+
+  .formular{
+    margin-bottom: 50px;
+  }
+  form {
+    position: relative;
+  	width: 300px;
+    height: 450px;
+  	padding: 2em ;
+    background-color: #bad8f0;
+    border: 1px solid grey;
+    margin:auto;
+  	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+  }
+
+  .form-wrapper{
+    text-align: left;
+  }
+
+
+  input, textarea {
+  	font-size: 18px;
+  	padding: 5px;
+  	-webkit-appearance: none;
+  	display: block;
+  	background: #fafafa;
+  	color: black;
+  	width: 97%;
+  	border: none;
+  	border-radius: 0;
+  	border-bottom: 1px solid #757575;
+  }
+
+  input:focus, textarea:focus { outline: none; }
+
+
+  /* Label */
+
+  label {
+
+  	font-size: 18px;
+  	font-weight: normal;
+
+  	pointer-events: none;
+  	left: 5px;
+  	top: 10px;
+  	transition: all 0.2s ease;
+  }
+
+
+  /* Button */
+
+  .contact-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+
+    width: 50%;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #3160B6;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    border-radius: 4px;
+  }
+  .button:focus { outline: 0; }
+
+
+  /* Button modifiers */
+
+  .buttonBlue {
+    background: #4a89dc;
+    text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+  }
+
+  .buttonBlue:hover { background: #357bd8; }
+
+  .contact-daten{
+    padding: 50px 200px 0;
+  }
+
+  .form-control{
+    margin: 0.5em 0 2em;
+  }
+  .email-link{
+    color: blue;
+    text-decoration: underline;
+  }
+
+  /* Footer */
+  .footer{
+    height: 100px;
+    display: grid;
+    place-items: center;
+    background-color: #171724;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 0 2em;
+    margin: 0;
+  }
+
+  .footer-text p{
+    margin: 0;
+  }
+
+  .footer-wrapper{
+    display:flex;
+  }
+
+  .fab{
+    padding: 1em 0.5em 0;
+    color: rgba(210, 215, 211, 1);
+  }
