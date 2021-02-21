@@ -57,6 +57,20 @@ function prevSlide(){
 }
 nextSlide();
 
+//Pfeiltasten-Funktion
+  document.addEventListener("keydown", function(event){
+    const key = event.key;
+    switch (event.key) {
+        case "ArrowLeft":
+            prevSlide();
+            break;
+        case "ArrowRight":
+            nextSlide();
+            break;
+    }
+});
+
+
 
 //On Tour
 

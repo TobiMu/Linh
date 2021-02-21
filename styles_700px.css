@@ -34,7 +34,7 @@
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 5px 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 24px; /* Increase font size */
+    font-size: 36px; /* Increase font size */
   }
 
   #myBtn:hover {
@@ -43,7 +43,7 @@
 
   .navbar{
 
-    min-height: 60px;
+    min-height: 100px;
     width: 100%;
     position: relative;
     display: grid;
@@ -72,6 +72,7 @@
 
   .nav-link{
     padding: 0.2em;
+    font-size: 32px;
 
   }
 
@@ -88,7 +89,7 @@
 
   .nav-name{
     position: absolute;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bolder;
     top: -4px;
     left: 2%;
@@ -99,8 +100,8 @@
 
 
   .Insta-Icon, .Facebook-Icon, .Youtube-Icon, .Twitch-Icon{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 
   }
 
@@ -116,12 +117,12 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 60px;
+    height: 42px;
     }
 
     .toggle-button .linie{
-    height: 3px;
+    height: 6px;
     width: 100%;
     background-color: white;
     }
@@ -606,6 +607,7 @@
   	border: none;
   	border-radius: 0;
   	border-bottom: 1px solid #757575;
+    font-family: inherit;
   }
 
   input:focus, textarea:focus { outline: none; }

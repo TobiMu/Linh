@@ -25,7 +25,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 40px; /* Place the button at the bottom of the page */
-    right: 40px; /* Place the button 30px from the right */
+    right: 80px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -34,7 +34,7 @@
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 5px 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 24px; /* Increase font size */
+    font-size: 28px; /* Increase font size */
   }
 
   #myBtn:hover {
@@ -632,6 +632,7 @@
   	border: none;
   	border-radius: 0;
   	border-bottom: 1px solid #757575;
+    font-family: inherit;
   }
 
   input:focus, textarea:focus { outline: none; }
