@@ -1,4 +1,5 @@
-@media only screen and (max-width:1366px) {
+@media only screen and (max-width:480px) {
+
   body{
     width: 100%;
     margin: 0;
@@ -25,7 +26,7 @@
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 40px; /* Place the button at the bottom of the page */
-    right: 80px; /* Place the button 30px from the right */
+    right: 40px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -34,7 +35,7 @@
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 5px 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 28px; /* Increase font size */
+    font-size: 36px; /* Increase font size */
   }
 
   #myBtn:hover {
@@ -43,7 +44,7 @@
 
   .navbar{
 
-    height: 60px;
+    min-height: 60px;
     width: 100%;
     position: relative;
     display: grid;
@@ -72,6 +73,7 @@
 
   .nav-link{
     padding: 0.2em;
+    font-size: 22px;
 
   }
 
@@ -82,7 +84,7 @@
 
   .nav-socialmedia{
     position: absolute;
-    left: 15%;
+    left: 2%;
     top: 35%;
   }
 
@@ -99,8 +101,8 @@
 
 
   .Insta-Icon, .Facebook-Icon, .Youtube-Icon, .Twitch-Icon{
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
 
   }
 
@@ -108,12 +110,40 @@
       background: grey;
     }
 
+    .toggle-button{
+      z-index: 9999;
+    position: absolute;
+    top: 1rem;
+    right: 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    }
+
+    .toggle-button .linie{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    }
+
+    .toggle-links{
+    display: none;
+    flex-direction: column;
+    padding-top: 3em;
+    }
+
+    .active{
+      display: flex;
+    }
 
     /* Slider  */
     .slider{
       display: flex;
       position: relative;
       min-height: 800px;
+      width: 100%;
 
 
 
@@ -123,38 +153,57 @@
     .slide{
       width: 100%;
       background-image: linear-gradient(to right,rgba(255, 255, 255, 1),rgba(232, 236, 241, 1),rgba(242, 241, 239, 0.1));
-      display: flex;
+      min-height: 1000px;
       position: relative;
       text-align: center;
     }
-
-    .slide-textbox, .titel-box{
-      font-family: serif;
-      font-size: 22px;
-      display: inline-block;
-      width: 25ch;
-      text-align: left;
-      line-height: 1.5em;
-      vertical-align: top;
-      padding: 5em 1em 0;
+    .slide-textbox {
+      display: none;
 
     }
 
     .titel-box{
-      text-align: center;
-    }
-    .titel-klein, .medaille-klein{
       display: none;
     }
 
+    .titel-klein-wrapper{
+      max-width: 480px;
+      display:flex;
+      justify-content:center;
+      position: absolute;
+      bottom: 180px;
+      left:0;
+    }
+
+    .titel-klein{
+      font-family: serif;
+      font-size: 20px;
+      display: inline-block;
+      width: 25ch;
+      text-align: center;
+      line-height: 1.2em;
+
+      padding: 1em;
+      background-color: rgba(255, 255, 255, 1);
+      margin: 0 0 30px 60px;
+
+    }
+    .medaille-klein{
+      display: block;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+        width: 100%;
+
+    }
 
     .slide-img{
       display: inline-block;
     }
 
-
-      .trophy-gold,.trophy-silber, .trophy-buli, .loewen-logo{
-      display:none;
+    .trophy-gold,.trophy-silber, .trophy-buli, .loewen-logo{
+    display: none;
     }
 
 
@@ -226,7 +275,7 @@
 
   }
   .partner-text{
-    width: 40ch;
+    width: 30ch;
     padding-bottom: 20px;
 
   }
@@ -237,6 +286,7 @@
     /* background-color: rgba(232, 236, 241, 1); */
     position: relative;
     color: rgba(255, 255, 255, 0.9);
+    font-size: 10px;
 
   }
 
@@ -267,7 +317,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 90px;
+    padding: 0;
     margin: 0;
     position: relative;
 
@@ -287,12 +337,13 @@
     align-items: center;
     font-weight: 100;
     text-align: center;
+    width: 80px;
 
   }
 
   .turnier{
-    padding: 0px 20px;
-    width:100px;
+    padding: 0px;
+    width: 80px;
     height: 100px;
     text-align: center;
     justify-content: center;
@@ -303,14 +354,14 @@
     }
     .turnier:before{
       content: "";
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
       background-color: lightgrey;
-      border-radius: 25px;
+      border-radius: 10px;
 
       position: absolute;
-      top: -15px;
-      left: 44%;
+      top: -10px;
+      left: 38%;
       transition: all 200ms ease-in;
       cursor: pointer;
     }
@@ -328,7 +379,7 @@
     }
 
   .van{
-    width:100px;
+    width:80px;
     padding-right: 20px;
   }
 
@@ -361,24 +412,35 @@
     padding: 50px 0;
     margin: 0;
 
+
   }
 
 
 
   .about-text{
-  width: 40ch;
+  width: 25ch;
   padding: 0 4em;
   position: relative;
+  text-align: center;
+  margin: 0;
   }
 
   .about-video{
-    padding: 2em;
+
+    padding: 2em 0;
+    text-align: center;
+  }
+
+  .video{
+    width: 240px;
+    height: 240px;
   }
 
   .about-referenz{
-    padding-top: 3em;
+    padding-top: 23em;
+    padding-right: 0.8em;
     position: absolute;
-    top: 72%;
+    bottom: 10%;
     right: 30%;
   }
   .presselogo{
@@ -386,6 +448,7 @@
     display: inline;
     width: 30px;
     height: 30px;
+
   }
 
   /* Sponsoring */
@@ -474,13 +537,13 @@
   }
 
   .booking-content, .booking-partner{
-    width: 40ch;
-    padding: 1em 6em;
+    width: 30ch;
+    padding: 1em 2em;
   }
 
   .booking-header{
     text-align: center;
-    padding: 18em 6em 0;
+    padding: 2em 6em 0;
   }
 
   .booking-kontakt{
@@ -506,7 +569,7 @@
 
   /* Contact */
   .contact{
-    min-height: 700px;
+    height: auto;
     display: grid;
     place-items: center;
     /* background-image: linear-gradient(to right,rgba(255, 255, 255, 1),rgba(232, 236, 241, 1),rgba(242, 241, 239, 0.1)); */
@@ -516,23 +579,24 @@
   .contact-wrapper{
     display: flex;
     float: left;
-    height: 650px;
-
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
     text-align: center;
 
   }
 
   .contact-wrapper img{
-    height:600px;
-    padding-left: 40px;
+    display: none;
   }
 
   .formular{
-    margin-left: 30px;
+    margin-bottom: 50px;
+    margin-left: 0;
   }
   form {
     position: relative;
-  	width: 250px;
+  	width: 200px;
     height: 450px;
   	padding: 2em ;
     background-color: #bad8f0;
@@ -547,7 +611,7 @@
 
 
   input, textarea {
-  	font-size: 18px;
+  	font-size: 16px;
   	padding: 5px;
   	-webkit-appearance: none;
   	display: block;
@@ -557,7 +621,7 @@
   	border: none;
   	border-radius: 0;
   	border-bottom: 1px solid #757575;
-      font-family: inherit;
+    font-family: inherit;
   }
 
   input:focus, textarea:focus { outline: none; }
@@ -612,7 +676,7 @@
   .buttonBlue:hover { background: #357bd8; }
 
   .contact-daten{
-    padding: 200px 0 0;
+    padding: 50px 0 0;
   }
 
   .form-control{

@@ -2,14 +2,26 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- cookie-banner -->
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5db1475d-b72d-4f91-897d-90994335d68e" data-blockingmode="auto" type="text/javascript"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
   <meta charset="utf-8">
-  
+  <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Linh Tran</title>
   <link rel="stylesheet" media="(min-width: 1367px)" href="styles.css">
   <link rel="stylesheet" media="(max-width: 1366px)" href="styles_1366px.css" />
   <link rel="stylesheet" media="(max-width: 1100px)" href="styles_1100px.css" />
   <link rel="stylesheet" media="(max-width: 900px)" href="styles_900px.css" />
   <link rel="stylesheet" media="(max-width: 700px)" href="styles_700px.css" />
+    <link rel="stylesheet" media="(max-width: 480px)" href="styles_480px.css" />
   <script src="index.js" async></script>
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="fontawesome-free-5.15.1-web\css\all.min.css">
@@ -177,6 +189,9 @@
       <a class="prev" onclick="prevSlide()">&#10094;</a>
       <a class="next" onclick="nextSlide()">&#10095;</a>
     </div>
+    
+  <!-- Cookie-Banner -->
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/5db1475d-b72d-4f91-897d-90994335d68e/cd.js" type="text/javascript" async></script>
     <!-- Partner -->
     <div class="partner">
       <div class="partner-box">
@@ -394,7 +409,7 @@
 
         <div class="formular">
           <h2>Ich freue mich über deine Nachricht!</h2>
-          <form method="POST" name="emailform" action="https://formspree.io/f/xleokvvq" class="contact-form">
+          <form method="post" name="emailform" action="form.php" class="contact-form">
             <div class="form-wrapper">
               <div>
                 <label for="InputName">Dein Name</label>
