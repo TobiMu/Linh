@@ -450,6 +450,10 @@
     height: 30px;
 
   }
+  
+  .verlinkung{
+    z-index: 9000;
+  }
 
   /* Sponsoring */
 
