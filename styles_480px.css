@@ -437,7 +437,7 @@
   }
 
   .about-referenz{
-    padding-top: 23em;
+    margin-top: 23em;
     padding-right: 0.8em;
     position: absolute;
     bottom: 10%;
@@ -451,9 +451,7 @@
 
   }
   
-  .verlinkung{
-    z-index: 9000;
-  }
+ 
 
   /* Sponsoring */
 
