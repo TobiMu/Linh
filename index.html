@@ -3,16 +3,15 @@
 
 <head>
   <!-- cookie-banner -->
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5db1475d-b72d-4f91-897d-90994335d68e" data-blockingmode="auto" type="text/javascript"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.2.9/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
-
-<!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
+  <script async id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5db1475d-b72d-4f91-897d-90994335d68e" data-blockingmode="auto" type="text/javascript"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src=“https://www.googletagmanager.com/gtag/js?id=G-QVVMC18LZ3”></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag(‘js’, new Date());
+    gtag(‘config’, ‘G-QVVMC18LZ3’);
+  </script>
   <meta charset="utf-8">
   <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Linh Tran</title>
@@ -115,8 +114,8 @@
           </div>
         </div>
         <div class="medaille-klein">
-          <img src="images/logo_loewen.png" alt="Loewen Logo">
-          <img src="images/Bundesliga_Schale.png" alt="Bundesliga-Schale">
+          <img src="images/logo_loewen.png" alt="Loewen Logo" width="150px">
+          <img src="images/Bundesliga_Schale.png" alt="Bundesliga-Schale" width="150px">
         </div>
 
 
@@ -149,7 +148,7 @@
           </div>
         </div>
         <div class="medaille-klein">
-          <img src="images/Medaille_Gold.png" alt="Goldmedaille" height="190px" width="190px">
+          <img src="images/Medaille_Gold.png" alt="Goldmedaille" height="150px" width="150px">
         </div>
       </div>
       <div class="slide slide2">
@@ -180,7 +179,7 @@
 
         </div>
         <div class="medaille-klein">
-          <img src="images/Medaille_Silber.png" alt="Silbermedaille">
+          <img src="images/Medaille_Silber.png" alt="Silbermedaille" width="150px">
         </div>
       </div>
 
@@ -408,7 +407,26 @@
 
         <div class="formular">
           <h2>Ich freue mich über deine Nachricht!</h2>
-          <form method="post" name="emailform" action="form.php" class="contact-form">
+          <form method="POST" name="emailform" action="https://formspree.io/f/xleokvvq" class="contact-form">
+            <div class="form-wrapper">
+              <div>
+                <label for="InputName">Dein Name</label>
+                <input type="text" name="name" class="form-control" id="InputName" aria-describedby="nameHelp" placeholder="Name">
+              </div>
+              <div>
+                <label for="InputEmail">Deine Email-Addresse</label>
+
+                <input type="text" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Mail">
+              </div>
+              <div>
+                <label for="InputMessage">Deine Nachricht</label>
+                <br>
+                <textarea name="message" class="form-control" id="InputMessage" rows="6" cols="30"></textarea>
+              </div>
+            </div>
+
+            <button class="contact-button buttonBlue" type="submit" value="send form"><i class="fas fa-envelope"></i> Senden</button>
+          </form>
             <div class="form-wrapper">
               <div>
                 <label for="InputName">Dein Name</label>
@@ -445,7 +463,8 @@
       </div>
       <div class="footer-text">
         <p>© Copyright 2020 Linh Tran. </p>
-        <a class="impressum" href="impressum.html" target="_blank">Impressum & Datenschutz</a>
+        <a class="impressum" href="impressum.html" target="_blank">Impressum </a>
+        <a href="datenschutz.html">Datenschutz</a>
       </div>
     </div>
   </div>
