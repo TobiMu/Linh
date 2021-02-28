@@ -182,7 +182,7 @@
       font-family: serif;
       font-size: 20px;
       display: inline-block;
-      width: 25ch;
+      max-width: 25ch;
       text-align: center;
       line-height: 1.2em;
 
@@ -278,7 +278,7 @@
 
   }
   .partner-text{
-    width: 30ch;
+    max-width: 30ch;
     padding-bottom: 20px;
 
   }
@@ -420,7 +420,7 @@
 
 
   .about-text{
-  width: 25ch;
+  max-width: 25ch;
   padding: 0 4em;
   position: relative;
   text-align: center;
@@ -463,7 +463,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(images/Sponsoring.jpg);
+    background: url(images/Sponsoring-klein.jpg);
     opacity: 0.3;
     background-size: cover;
     background-position: center;
@@ -491,7 +491,7 @@
   }
 
   .sponsoring-text p{
-    width: 30ch;
+    max-width: 30ch;
     margin: auto;
   }
 
@@ -540,8 +540,8 @@
   }
 
   .booking-content, .booking-partner{
-    width: 30ch;
-    padding: 1em 2em;
+    max-width: 30ch;
+    padding: 1em;
   }
 
   .booking-header{
