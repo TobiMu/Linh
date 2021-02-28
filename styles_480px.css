@@ -597,6 +597,10 @@
     margin-bottom: 50px;
     margin-left: 0;
   }
+
+  .formular h2{
+    max-width: 25ch;
+  }
   form {
     position: relative;
   	width: 200px;
