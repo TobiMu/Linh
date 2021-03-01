@@ -84,7 +84,7 @@
 
   .nav-socialmedia{
     position: absolute;
-    left: 2%;
+    left: 1%;
     top: 35%;
   }
 
@@ -186,7 +186,7 @@
       text-align: center;
       line-height: 1.2em;
 
-      padding: 1em;
+      padding: 1em 0.5em;
       background-color: rgba(255, 255, 255, 1);
       margin: 0  30px ;
 
@@ -233,16 +233,16 @@
     .prev{
       cursor: pointer;
       position: absolute;
-      top: 50%;
-      left: 5%;
+      top: 25%;
+      left: 2%;
       font-size: 5em;
       }
 
     .next{
       cursor: pointer;
       position: absolute;
-      top: 50%;
-      right: 5%;
+      top: 25%;
+      right: 2%;
       font-size: 5em;
       }
 
@@ -428,7 +428,7 @@
 }
 
   .about-text{
-  max-width: 20ch;
+  max-width: 25ch;
   padding: 0 ;
   position: relative;
   text-align: center;
