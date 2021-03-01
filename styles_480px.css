@@ -168,7 +168,7 @@
 
     .titel-klein-wrapper{
       max-width: 480px;
-
+      padding: 0;
       position: absolute;
       margin-left: auto;
       margin-right: auto;
@@ -182,7 +182,7 @@
       font-family: serif;
       font-size: 20px;
       display: inline-block;
-      max-width: 25ch;
+      max-width: 22ch;
       text-align: center;
       line-height: 1.2em;
 
@@ -203,6 +203,10 @@
 
     .slide-img{
       display: inline-block;
+    }
+
+    .slider img{
+    -webkit-filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5)); filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5));
     }
 
     .trophy-gold,.trophy-silber, .trophy-buli, .loewen-logo{
@@ -330,23 +334,25 @@
 
   .li{
     transition: all 200ms ease-in;
+
   }
 
   .timestamp{
+
     margin-bottom: 20px;
     padding: 0px ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 100;
+    font-size: 8px;
     text-align: center;
-    width: 80px;
+    max-width: 70px;
 
   }
 
   .turnier{
     padding: 0px;
-    width: 80px;
+    max-width: 80px;
     height: 100px;
     text-align: center;
     justify-content: center;
@@ -407,8 +413,7 @@
 
   /* About Me */
   .aboutMe{
-    display: grid;
-    place-items: center;
+
     background-color: rgba(23,23,36,1);
     color: rgba(255, 255, 255, 0.9);
     padding: 50px 0;
@@ -417,14 +422,17 @@
 
   }
 
+.about-wrapper{
+  margin: auto;
 
+}
 
   .about-text{
-  max-width: 25ch;
-  padding: 0 4em;
+  max-width: 20ch;
+  padding: 0 ;
   position: relative;
   text-align: center;
-  margin: 0;
+  margin: auto;
   }
 
   .about-video{
@@ -440,10 +448,13 @@
 
   .about-referenz{
     margin-top: 21em;
-    padding-right: 0.8em;
+
     position: absolute;
-    bottom: 10%;
-    right: 30%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   .presselogo{
     object-fit: contain;
@@ -480,7 +491,7 @@
     position: relative;
   }
 
-  .sponsoring-text{
+  .sponsoring-wrapper{
     text-align: center;
     width:100%;
     height: 600px;
@@ -490,10 +501,14 @@
 
   }
 
+
   .sponsoring-text p{
+    text-align: center;
     max-width: 30ch;
     margin: auto;
   }
+
+
 
   .sponsoring-kontakt{
     font-size: 20px;
@@ -541,7 +556,7 @@
 
   .booking-content, .booking-partner{
     max-width: 30ch;
-    padding: 1em;
+    padding: 1em 0;
   }
 
   .booking-header{

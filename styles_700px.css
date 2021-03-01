@@ -171,7 +171,7 @@
       margin-right: auto;
       right: 0;
       left:0;
-      bottom: 200px;
+      bottom: 160px;
       text-align: center;
     }
 
@@ -195,6 +195,10 @@
 
     .slide-img{
       display: inline-block;
+    }
+
+    .slider img{
+    -webkit-filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5)); filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5));
     }
 
     .trophy-gold,.trophy-silber, .trophy-buli, .loewen-logo{
@@ -416,7 +420,7 @@
   }
 
   .about-video{
-    width:360px;
+    max-width:360px;
     padding: 2em;
   }
 
@@ -430,6 +434,7 @@
     position: absolute;
     top: 75%;
     right: 20%;
+
   }
   .presselogo{
     object-fit: contain;
@@ -451,11 +456,10 @@
     opacity: 0.3;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
 
   }
-
   .sponsoring{
     display: flex;
     justify-content: center;
@@ -464,7 +468,7 @@
     position: relative;
   }
 
-  .sponsoring-text{
+  .sponsoring-wrapper{
     text-align: center;
     width:100%;
     height: 600px;
@@ -476,9 +480,12 @@
 
 
   .sponsoring-text p{
+    text-align: center;
     width: 30ch;
     margin: auto;
   }
+
+
 
   .sponsoring-kontakt{
     font-size: 20px;
