@@ -215,26 +215,27 @@ display:none;
 .partner-box{
   display:grid;
   place-items:center;
-  padding-left: 230px;
+  margin-left: 0px;
 }
 
 .partner-wrapper{
 display: flex;
 float: left;
 flex-wrap: wrap;
+padding-left: 230px;
 }
 .partner-überschrift{
   padding-top: 20px;
 }
 .logo-leonhart{
-  padding-left: 220px;
+  margin: 0 150px ;
   padding-top: 20px;
   width: 100px;
 
 }
 .partner-text{
-  width: 40ch;
-  padding-left: 200px;
+  width: 36ch;
+
 }
 
 /*On Tour */
@@ -548,6 +549,7 @@ padding: 0 4em;
 .contact-wrapper img{
   height:600px;
   padding-left: 100px;
+  -webkit-filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5)); filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5));
 }
 
 .formular{

@@ -412,7 +412,7 @@
     opacity: 0.3;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
 
   }
@@ -541,6 +541,7 @@
   .contact-wrapper img{
     height:600px;
     padding-left: 40px;
+    -webkit-filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5)); filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5));
   }
 
   .formular{

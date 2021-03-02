@@ -611,6 +611,7 @@
 
   .contact-wrapper img{
     padding-left: 8em;
+    -webkit-filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5)); filter: drop-shadow(12px 8px 8px rgba(0,0,0,0.5));
   }
 
   .formular{
