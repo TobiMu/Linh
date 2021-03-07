@@ -102,13 +102,13 @@
   }
 
 
-  .Insta-Icon, .Facebook-Icon, .Youtube-Icon, .Twitch-Icon{
+  .Insta-Icon, .Facebook-Icon, .Youtube-Icon{
     height:20px;
     width: 20px;
 
   }
 
-  .Insta-Icon:hover, .Facebook-Icon:hover, .Youtube-Icon:hover, .Twitch-Icon:hover{
+  .Insta-Icon:hover, .Facebook-Icon:hover, .Youtube-Icon:hover{
       background: grey;
     }
 
