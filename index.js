@@ -25,7 +25,7 @@ var toggleLinks = document.getElementsByClassName("toggle-links")[0];
 
 toggleButton.addEventListener("click", function(){
   toggleLinks.classList.toggle("active");
-})
+});
 
 // Slideshow
 var i;
@@ -90,3 +90,28 @@ for(i=0; i < turniere.length; i++){
 }
 
 // Kontaktform
+
+  var submitButton = document.getElementsByClassName("contact-button")[0];
+
+  submitButton.addEventListener("click", function(event){
+    var mail = document.getElementById("InputEmail").value;
+    var name = document.getElementById("InputName").value;
+    var message = document.getElementById("InputMessage").value;
+    if (name.length<2){
+      event.preventDefault();
+      alert("Bitte geben Sie einen Namen ein.");
+    }
+    if (message.length<2){
+      event.preventDefault();
+      alert("Bitte geben Sie eine Nachricht ein.");
+    }
+    if( mail.match(/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/)){
+        return true;
+    }
+
+    else{
+      event.preventDefault();
+      alert("Bitte geben Sie eine gültige Email ein.");
+    }
+
+});
