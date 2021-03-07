@@ -38,10 +38,6 @@
     font-size: 36px; /* Increase font size */
   }
 
-  #myBtn:hover {
-    back
-  }
-
   .navbar{
 
     min-height: 60px;
@@ -186,11 +182,16 @@
       text-align: center;
       line-height: 1.2em;
 
-      padding: 1em 0.5em;
+      padding: 0.5em ;
       background-color: rgba(255, 255, 255, 1);
       margin: 0  30px ;
 
     }
+
+    .titel-klein h1{
+      font-size: 36px;
+    }
+
     .medaille-klein{
       display: block;
 
