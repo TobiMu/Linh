@@ -129,7 +129,7 @@
     }
 
     .slide-textbox, .titel-box{
-      font-family: serif;
+      font-family:  "Source Serif Pro", serif;
       font-size: 22px;
       display: inline-block;
       width: 25ch;

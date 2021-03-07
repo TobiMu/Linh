@@ -179,7 +179,7 @@
     }
 
     .titel-klein{
-      font-family: serif;
+      font-family:  "Source Serif Pro", serif;
       font-size: 20px;
       display: inline-block;
       max-width: 24ch;
