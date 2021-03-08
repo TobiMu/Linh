@@ -1,3 +1,13 @@
+
+  $("document").ready(function(){
+        $("body").css({background: "rgba(46, 49, 49, 1)"});
+        $(".slider").css({visibility:"visible"});
+
+
+
+  });
+
+
 //Scroll to top button
 //Get the button:
 mybutton = document.getElementById("myBtn");

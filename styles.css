@@ -3,10 +3,12 @@
 body{
   width: 100%;
   margin: 0;
-  background-color:rgba(46, 49, 49, 1);
+  background-image: linear-gradient(to right,rgba(255, 255, 255, 1),rgba(232, 236, 241, 1),rgba(242, 241, 239, 0.1));
   font-family: 'Inter', sans-serif;
 
+
 }
+
 
 a {
   text-decoration: none;
@@ -118,6 +120,8 @@ button:hover{
   display: flex;
   position: relative;
   min-height: 800px;
+  visibility: hidden;
+
 
 
 
@@ -130,6 +134,7 @@ button:hover{
   display: flex;
   position: relative;
   text-align: center;
+
 }
 
 .slide-textbox, .titel-box{
